@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-link {
+	@apply border-b-2 py-2 border-transparent hover:border-orange-400 hover:text-orange-400 ease-in duration-500;
+}
+
+.rings-container {
+	@apply hover:shadow-rings hover:bg-orange-btn rounded-20 pb-8 hover:text-white;
+}
+
+.rings-text {
+	@apply text-3xl font-semibold mt-10;
+}
+
+.exclusive-owner {
+	@apply mt-5 text-lg mb-4 font-bold leading-68 ml-7;
+}
+
+.exclusive-box {
+	@apply bg-[#F4F4F4] rounded-20 shadow-exclusive cursor-pointer hover:bg-[#FFFFFF] ease-linear duration-300;
+}
+
+.orange_amount {
+	@apply text-[#FF8E1E] text-2xl font-bold;
+}
+
+.title {
+	@apply font-bold text-5xl leading-68;
+}
+
+.footer_link {
+	@apply text-xl leading-33 hover:text-sky-500 ease-in-out duration-300;
+}
