@@ -1,35 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.header-link {
-	@apply border-b-2 py-2 border-transparent hover:border-orange-400 hover:text-orange-400 ease-in duration-500;
-}
+@layer components {
+	.title1024 {
+		@apply font-bold text-5xl leading-68 tracking-base;
+	}
 
-.rings-container {
-	@apply hover:shadow-rings hover:bg-orange-btn rounded-20 pb-8 hover:text-white;
-}
+	.title768 {
+		@apply font-bold text-3xl leading-68 tracking-base;
+	}
 
-.rings-text {
-	@apply text-3xl font-semibold mt-10;
-}
+	.title {
+		@apply font-bold text-2xl leading-45 tracking-base;
+	}
 
-.exclusive-owner {
-	@apply mt-5 text-lg mb-4 font-bold leading-68 ml-7;
-}
+	.header-link {
+		@apply border-b-2 py-2 border-transparent hover:border-orange-400 hover:text-orange-400 ease-in duration-500 tracking-base;
+	}
 
-.exclusive-box {
-	@apply bg-[#F4F4F4] rounded-20 shadow-exclusive cursor-pointer hover:bg-[#FFFFFF] ease-linear duration-300;
-}
+	.rings-container {
+		@apply hover:shadow-rings hover:bg-orange-btn rounded-20 pb-8 hover:text-white tracking-base items-center grid justify-center  600px:max-w-ringCont 768px:max-w-none;
+	}
 
-.orange_amount {
-	@apply text-[#FF8E1E] text-2xl font-bold;
-}
+	.rings-text {
+		@apply text-3xl;
+	}
 
-.title {
-	@apply font-bold text-5xl leading-68;
-}
+	.rings-text768 {
+		@apply text-xl font-bold mt-10 tracking-base;
+	}
 
-.footer_link {
-	@apply text-xl leading-33 hover:text-sky-500 ease-in-out duration-300;
+	.exclusive-owner {
+		@apply mt-5 mb-4 ml-7 leading-68;
+	}
+
+	.exclusive-owner1024 {
+		@apply mt-2 mb-2 text-lg font-bold leading-33 ml-7 tracking-base;
+	}
+
+	.exclusive-box {
+		@apply bg-[#F4F4F4] rounded-20 shadow-exclusive cursor-pointer hover:bg-[#FFFFFF] ease-linear duration-300 tracking-base;
+	}
+
+	.orange_amount {
+		@apply text-[#FF8E1E] text-2xl font-bold tracking-base;
+	}
+
+	.footer_link {
+		@apply 600px:text-xl leading-33 hover:text-sky-500 ease-in-out duration-300 tracking-base text-base;
+	}
 }
